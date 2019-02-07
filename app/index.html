@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zdravofarm</title>
+    <link rel="stylesheet" href="css/components/sprite.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="top-section">
+    <div class="wrapper">
+        <div class="page-center">
+           <header class="page-header">
+               <div class="header-wrap">
+                <div class="logo">
+                    <a class="logo__link" href="index.html">
+                        <img src="img/logo2.png" alt="здравофарм логотип" title="здравофарм">
+                    </a>
+                </div>
+               <div class="header-nav">
+                   <div class="cart-box modal-toggle-button">
+                        <div class="cart-title">корзина</div>
+                       <div class="icon-cart">
+                           <span class="quantity"></span>
+                       </div>
+
+                   </div>
+                   <div class="burger-box-wrapper">
+                       <div class="burger-box menu-toggle-button">
+                           <div class="title">
+                               <span class="menu">меню</span>
+                               <span class="menu-close">закрыть</span>
+                           </div>
+                           <div class="hamburger">
+                               <div class="line top"></div>
+                               <div class="line middle"></div>
+                               <div class="line bottom"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+                </div>
+           </header>
+            <section>
+                <div class="page-left-title">пищевые добавки</div>
+
+                <div class="slider">
+                <div class="slider-item">
+
+                    <div class="left-item">
+                        <div class="hero slide-content-animate">
+                            <h1 class="hero-text">Время укреплять здоровье</h1>
+                        </div>
+                        <div class="text-block slide-content-animate">
+                        <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit, sed do eiusmod tempor. i/cididunt ut labore et
+                            dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                    </div>
+                        <a href="#" class="btn-shop slide-content-animate" title="в магазин">в&nbspмагазин</a>
+                    </div>
+                    <div class="right-item">
+                        <img class="slide-content-animate-img" src="img/banks.png" alt="банки">
+                    </div>
+                </div>
+                    <div class="slider-item">
+
+                        <div class="left-item">
+                            <div class="hero slide-content-animate">
+                                <h1 class="hero-text">Время укреплять здоровье</h1>
+                            </div>
+                            <div class="text-block slide-content-animate">
+                                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit, sed do eiusmod tempor. i/cididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                            </div>
+                            <a href="#" class="btn-shop slide-content-animate" title="в магазин">в&nbspмагазин</a>
+                        </div>
+                        <div class="right-item">
+                            <img class="slide-content-animate-img" src="img/banks.png" alt="банки">
+                        </div>
+                    </div>
+                    <div class="slider-item">
+
+                        <div class="left-item">
+                            <div class="hero slide-content-animate">
+                                <h1 class="hero-text">Время укреплять здоровье</h1>
+                            </div>
+                            <div class="text-block slide-content-animate">
+                                <p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit, sed do eiusmod tempor. i/cididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                            </div>
+                            <a href="#" class="btn-shop slide-content-animate" title="в магазин">в&nbspмагазин</a>
+                        </div>
+                        <div class="right-item">
+                            <img class="slide-content-animate-img" src="img/banks.png" alt="банки">
+                        </div>
+                    </div>
+                </div>
+                <div class="dots">
+                    <ul class="slick-dots" role="tablist">
+                        <li role="presentation"><button>01</button></li>
+                        <li role="presentation"><button>02</button></li>
+                        <li role="presentation"><button>03</button></li>
+                    </ul>
+                </div>
+                <div class="sub-wrap">
+                    <div class="sub-1 sub">
+                        <div class="arrow"></div>
+                        <div class="text">подписаться</div>
+                    </div>
+                    <div class="sub-2 sub">
+                        <div class="arrow"></div>
+                        <div class="icon-wrap">
+                            <a href="#" class="icon telegram" title="телеграмм"></a>
+                            <a href="#" class="icon youtube" title="ютуб"></a>
+                            <a href="#" class="icon instagram" title="инстаграм"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tobottom">
+                    <a href="#" title="вниз">
+                        <div class="arrow todown"></div>
+                    </a>
+                </div>
+                <div class="callback">
+                    <a href="#" class="callback-link"><img src="img/callback.png" title="callback"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal-wrapper">
+        <div class="backdrop modal-toggle-button"></div>
+        <div class="modal container">
+            <div class="header">Корзина</div>
+                    <div class="modal-toggle-button"><span>Закрыть</span>
+                        <div id="cllose" class="close"></div>
+                    </div>
+
+                    <label id="sucs"></label>
+                    <input type="button" onclick="relod()" hidden class="button" id="secsses" style="display: none" value="Закрыть">
+
+                    <form id="cart_rem" action="" class="form">
+                        <div class="left-page sl--scrollable">
+                            <ul>
+                                <div id="cart" class="cart_header">
+                                    <div class="cart-empty active">Ваша корзина пуста!</div>
+                                </div>
+                            </ul>
+
+                        </div>
+
+                        <div class="right-page">
+                            <div class="header">Оформление заказа</div>
+                            <div class="input-box">
+                                <input type="text" id="login_firstname" class="input" placeholder="Имя" required>
+                                <label id="error_firstname"></label>
+                                <input type="tel" id="login_telephone" name="phone" class="input" placeholder="+38(___)___-__-__" required>
+                                <label id="error_telephone"></label>
+                                <input type="text" id="login_city" class="input" placeholder="Адресс доставки новой почтой" required>
+                                <label id="error_city"></label>
+                            </div>
+                            <div class="right-footer">
+                                <div  class="sum-box">Итого: <span class="value" id="cart_money">0грн</span></div>
+                                <input type="button" onclick="doOrder()" class="button orange" value="Оформить">
+                            </div>
+                        </div>
+                    </form>
+
+        </div>
+    </div>
+    <div class="menu-wrapper">
+        <div class="backdrop menu-backdrop menu-toggle-button"></div>
+        <div class="menu-block">
+            <button class="menu-toggle-button  close-btn">close</button>
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a>Почему Здравофарм</a></li>
+                <li><a>МАГАЗИН</a></li>
+                <li><a>КТО ПОЛЬЗУЕТСЯя</a></li>
+                <li><a>Партенры</a></li>
+                <li><a>Наши клиенты</a></li>
+                <li><a>видео-отзывы</a></li>
+                <li><a>Мероприятия</a></li>
+            </ul>
+            <div class="menu-footer menu-list">
+                <ul>
+                    <li><a href="#" data-color="#773d1f">Instagram</a></li>
+                    <li><a href="#" data-color="#773d1f">Telegram</a></li>
+                    <li><a href="#" data-color="#773d1f">Youtube</a></li>
+                </ul>
+                <div class="socials">
+                    <form action="https://zdravopharm.in.ua/index.php?route=common/language/language" method="post" enctype="multipart/form-data" id="form-language">
+                        <div class="languages">
+                                  <span class="lang btn btn-link btn-block language-select active"
+                                        name="ru-ru"  > Ru</span>
+                            <span class="lang btn btn-link btn-block language-select"
+                                  name="uk-ua"  > Uk</span>
+                        </div>
+                        <input type="hidden" name="code" value=""/>
+                        <input type="hidden" name="redirect" value="http://zdravopharm.in.ua/"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/all.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
