@@ -1,0 +1,17 @@
+@import 'assets/vars';
+
+// //bootsrap import
+// @import '../../node_modules/bootstrap/scss/functions';
+// @import '../../node_modules/bootstrap/scss/variables';
+// @import '../../node_modules/bootstrap/scss/mixins';
+// @import '../../node_modules/bootstrap/scss/nav';
+// @import '../../node_modules/bootstrap/scss/tooltip';
+
+
+
+@import 'assets/reset';
+@import 'assets/mixins';
+@import 'assets/base';
+@import 'assets/header';
+@import 'assets/main-content';
+@import 'assets/media-queries';
