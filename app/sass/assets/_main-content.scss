@@ -204,10 +204,14 @@ section {
 .dots {
   position: absolute;
   right: 0;
-  left: 97%;
+  left: 100%;
   top: 43.15%;
   transform: translateY(-50%);
   ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     li {
       padding: 5px;
       margin-bottom: 35px;
@@ -218,10 +222,9 @@ section {
   }
 }
 
-li {
-
-  button{
-    font-family:'Calibri',sans-serif;
+.dots-line {
+  button {
+    font-family: 'Calibri', sans-serif;
     font-size: 10px;
     line-height: 14px;
     background-color: transparent;
@@ -230,25 +233,24 @@ li {
     outline: none;
     position: relative;
     cursor: pointer;
-
   }
 }
-li:hover button {
-  color: #ffff;
-}
-li:after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 22px;
-  bottom: -30px;
-  left: 17px;
-  background-color: #444443;
-}
-li:last-child:after
-{
-  display: none;
-}
+.dots-line:hover button {
+    color: #ffff;
+  }
+.dots-line :after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    bottom: -34px;
+    left: 12px;
+    background-color: #444443;
+  }
+.dots-line:last-child :after {
+    display: none;
+  }
+
 
 // subscribe box style here
 
